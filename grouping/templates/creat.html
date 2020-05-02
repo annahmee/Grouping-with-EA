@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>主页</title>
+		<!-- 引入 Bootstrap -->
+		<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<!-- 包括所有已编译的插件 -->
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			body {
+			  background-image: url("./img/bg/load_bg.JPG");
+			  background-position: center 0;
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: cover;
+			  -webkit-background-size: cover;
+			  -o-background-size: cover;
+			  -moz-background-size: cover;
+			  -ms-background-size: cover;
+			}
+			.border {  
+			   width: 0;   
+			   height:0;  
+			   border-top: 100px solid steelblue;  
+			   border-right: 250px solid rgba(255,255,255,0.9);  
+			 } 
+		</style>
+	</head>
+	<body>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<div class="body">
+			<div class="load_form center-block" style=" width: 40%; height: 50%; background-color: rgba(255,255,255,0.8);">
+				<div style="position:relative;">
+					<div class="border" ></div>
+					<h1 ><font style="font-size:30px; color: white; position: absolute;left: 5px;top: 10px;">创建项目</font></h1>
+				</div>
+				<div style="padding-left: 5%;">
+					<label for="mail" style="color: black;font-size: 20px; margin-left: 60px;">学校</label>
+					<br/>
+					<select style="width: 80%;font-size: 20px;margin-left: 60px;border-radius: 5px;" >
+						<option value ="">福州大学</option>
+						<option value ="">福州大学至诚学院</option>
+					</select>
+					<br/>
+					<br/>
+					<label for="mail" style="color: black;font-size: 20px; margin-left: 60px;">学院</label>
+					<input type="text" class="form-control center-block" id="mail" name="mail" placeholder="请输入学院名称" style="width: 80%;" />
+					<br/>
+					<br/>
+					<label for="mail" style="color: black;font-size: 20px; margin-left: 60px;">专业</label>
+					<input type="text" class="form-control center-block" id="mail" name="mail" placeholder="请输入专业名称" style="width: 80%;" />
+					<br/>
+					<br/>
+					<label for="mail" style="color: black;font-size: 20px; margin-left: 60px;">年份</label>
+					<input type="text" class="form-control center-block" id="mail" name="mail" placeholder="请输入学年" style="width: 80%;" />
+					<br/>
+					<br/>
+					<button  type="button" class = "btn btn-danger center-block" style="font-size: 20px;width: 20%;">创建</button>
+					<br/>
+					<br/>
+					<!-- <button  type="button" class = "btn btn-default" style="background-color: white;color: black;">
+						<p class="text-left" style="font-size: 20px;font-weight: bold;">确认</p>
+					</button> -->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>创建项目</title>
+		<style type="text/css">
+		<!-- 引入 Bootstrap -->
+		<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<!-- 包括所有已编译的插件 -->
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		</style>
+		<link href="import.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="body">
+			<div id="load_form" >
+				<p id ="load_title">创建项目</p>
+				<img alt="title_bg" src="title_bg.png"/>
+				<div id="file_import" class = "center-block">
+					</div>
+				<div id="message">
+			    <div id="basic_msg">
+					<div id = "basic_msg_content">
+						<div id="group_num">
+								<label for="group" style="color: black;font-size: 20px; margin-left: 60px;">分组数：</label>
+								<input type="text" class="form-control center-block" id="group" name="group" placeholder="0 (组)" style="width: 80px;" />
+						</div>
+						
+					    <div id="teacher_num">
+							<label for="teacher" style="color: black;font-size: 20px; margin-left: 60px;">老师/组：</label>
+							<input type="text" class="form-control center-block" id="teacher" name="teacher" placeholder="0（人）" style="width: 80px;" />
+					    </div>
+		                <div id="student_num">
+							<label for="student" style="color: black;font-size: 20px; margin-left: 60px;">学生/组：</label>
+							<input type="text" class="form-control center-block" id="student" name="student" placeholder="0（人）" style="width: 80px;" />
+                        </div>
+				    </div>
+				</div>
+
+                <div id="same_group"> 
+					<label for="the_same_group" style="color: gray;font-size: 30px;">固定同组</label>
+				    <div class="same" id="same0">
+							<input type="text" class="form-control center-block" id="same00" name="same00" placeholder="姓名（一）" style="width: 25%;" />
+							<input type="text" class="form-control center-block" id="same01" name="same01" placeholder="姓名（一）" style="width: 25%;" />
+					</div>
+                    <div class="same" id="same1">
+							<input type="text" class="form-control center-block" id="same10" name="same10" placeholder="姓名（二）" style="width: 25%;" />
+							<input type="text" class="form-control center-block" id="same11" name="same11" placeholder="姓名（二）" style="width: 25%;" />
+					</div>
+					<div class="same" id="same2">
+							<input type="text" class="form-control center-block" id="same20" name="same20" placeholder="姓名（三）" style="width: 25%;" />
+							<input type="text" class="form-control center-block" id="same21" name="same21" placeholder="姓名（三）" style="width: 25%;" />
+					</div>
+                    
+                </div>
+
+                <div id="different_group">
+                    <label for="the_different_group" style="color: gray;font-size: 30px">固定不同组</label>
+					<div class="diff" id="diff0">
+					    <input type="text" class="form-control center-block" id="diff00" name="diff00" placeholder="姓名（一）" style="width: 25%;" />
+                        <input type="text" class="form-control center-block" id="diff02" name="diff02" placeholder="姓名（一）" style="width: 25%;" />
+					</div>
+					<div class="diff" id="diff1">
+                        <input type="text" class="form-control center-block" id="diff10" name="diff10" placeholder="姓名（二）" style="width: 25%;" />
+                        <input type="text" class="form-control center-block" id="diff11" name="diff11" placeholder="姓名（二）" style="width: 25%;" />
+					</div>
+					<div class="diff" id="diff2">
+                        <input type="text" class="form-control center-block" id="diff20" name="diff20" placeholder="姓名（三）" style="width: 25%;" />
+                        <input type="text" class="form-control center-block" id="name21" name="name21" placeholder="姓名（三）" style="width: 25%;" />
+                    </div>    
+				</div>
+			</div>
+					<button  type="button" class = "btn btn-danger center-block" style="font-size: 30px;width: 20%;">开始分组</button>
+			</div>
+			
+		</div>
+	</body>
+</html>
