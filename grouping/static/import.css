@@ -1,0 +1,200 @@
+body {
+    background-image: url("./img/bg/load_bg.JPG");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    margin: 0;
+    position: absolute;
+}
+.body {
+    margin-top: 100px;
+    margin-left: 260px;
+}
+
+/* import.css (20, 12) */
+#load_form {
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px;
+    box-shadow: 3px 3px 5px #dddddd;
+}
+
+/* import.css (31, 15) */
+#file_import {
+    border: 1px solid;
+    border-top-style: solid;
+    width: 340px;
+    height: 150px;
+    border-radius: 3px;
+    background-color: #d8f3dd;
+    border-color: #E6E6E6;
+    text-align: center;
+    background-image: url("upload_bg.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    background-position-y: center;
+}
+
+
+/* http://127.0.0.1:5500/import.html */
+#message {
+    display: flex;
+    height: 300px;
+}
+
+/* http://127.0.0.1:5500/import.html */
+#basic_msg {
+    width: 33.3%;
+}
+
+/* http://127.0.0.1:5500/import.html */
+#same_group {
+    display: flex;
+    flex-direction: column;
+    width: 33.4%;
+    text-align: center;
+}
+
+/* http://127.0.0.1:5500/import.html */
+#different_group {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    text-align: center;
+}
+
+/* http://127.0.0.1:5500/import.html */
+label {
+    margin: 20px;
+}
+
+/* import.css (76, 7) */
+.btn {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* http://127.0.0.1:5500/import.html */
+#basic_msg_content {
+    margin-top: 100px;
+}
+
+/* import.css (80, 21) */
+#basic_msg_content {
+    margin-top: 70px;
+}
+
+/* import.css (85, 13) */
+#group_num {
+    padding: 20px;
+}
+
+/* http://127.0.0.1:5500/import.html */
+#teacher_num {
+    padding: 20px;
+}
+
+/* http://127.0.0.1:5500/import.html */
+#student_num {
+    padding: 20px;
+}
+/* http://127.0.0.1:5500/import.html */
+#group {
+    margin-left: 5px;
+}
+
+input{
+    height: 30px;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+}
+
+#same0 {
+    margin-top: 10px;
+}
+
+#diff0{
+   margin-top: 10px;
+}
+
+#same00 {
+    margin-right: 50px;
+}
+
+#same10 {
+    margin-right: 50px;
+}
+
+#same20 {
+    margin-right: 50px;
+}
+
+#same1 {
+    margin-top: 40px;
+}
+
+#same2 {
+    margin-top: 40px;
+}
+
+#diff00 {
+    margin-right: 50px;
+}
+
+#diff10 {
+    margin-right: 50px;
+}
+
+#diff20 {
+    margin-right: 50px;
+}
+
+#diff1 {
+    margin-top: 40px;
+}
+
+#diff2 {
+    margin-top: 40px;
+}
+
+/* import.css (76, 7) */
+.btn {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    border: 1px solid #DDDDDD;
+    background-color: #6cb6e8;
+    color: white;
+    border-radius: 3px;
+    height: 60px;
+}
+
+/* http://127.0.0.1:5500/import.html */
+#load_title {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    z-index: 2;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+/* http://127.0.0.1:5500/import.html */
+img {
+    position: absolute;
+    width: 200px;
+    height: 130px;
+    z-index: 1;
+}
