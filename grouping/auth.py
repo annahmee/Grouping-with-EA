@@ -7,6 +7,10 @@ from .db import user_col
 bp=Blueprint('auth',__name__,url_prefix='/auth')
 
 
+@bp.route('/remider')
+def login_remider():
+    return render_template('remider.html')
+    
 @bp.route('/register',methods=['GET','POST'])
 def register():
     form=RegisterForm()
@@ -40,6 +44,8 @@ def login():
             return redirect(url_for('grouping.home'))
     return render_template('login.html',form=form)
 
+
+
 @bp.before_app_request
 def load_logged_in_user():
     user_mail = session.get('user_mail')
@@ -53,7 +59,7 @@ def login_required(view):
     @functools.wraps(view)
     def wrapped_view(**kwargs):
         if g.user is None:
-            return redirect(url_for('auth.login'))
+            return redirect(url_for('auth.login_remider'))
 
         return view(**kwargs)
 
