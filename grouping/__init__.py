@@ -1,14 +1,16 @@
-from flask import Flask,request,render_template,flash
+from flask import Flask
 
 def create_app():
     app=Flask('grouping')
     
     app.config.from_pyfile('settings.py')
 
-    from . import auth
+    from . import auth,pro_manage,resource,res_manage,file_manage
     app.register_blueprint(auth.bp)
-    from . import grouping
-    app.register_blueprint(grouping.bp)
+    app.register_blueprint(pro_manage.bp)
+    app.register_blueprint(resource.bp)
+    app.register_blueprint(res_manage.bp)
+    app.register_blueprint(file_manage.bp)
 
     return app
 
