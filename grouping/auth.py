@@ -1,39 +1,36 @@
 import functools
-from flask import Flask,request,render_template,flash,Blueprint,redirect,url_for,session,g
-from werkzeug.security import generate_password_hash, check_password_hash
-from .form import LoginForm,RegisterForm
-from .db import user_col
+from flask import request,render_template,Blueprint,redirect,url_for,session,g,jsonify
+from werkzeug.security import check_password_hash
 
 bp=Blueprint('auth',__name__,url_prefix='/auth')
 
 
-@bp.route('/remider')
-def login_remider():
-    return render_template('remider.html')
-    
 @bp.route('/register',methods=['GET','POST'])
 def register():
-    form=RegisterForm()
-    if form.validate_on_submit():
-        account=form.account.data
-        mail=form.mail.data
-        password=form.password.data
-        a_doc=user_col.find_one({'mail':mail})
-        if a_doc:
-            flash('邮箱已注册')
+    if request.method=='POST':
+        if request.is_json:
+            data=request.json
+            if not data.get('userName') or not data.get('email') or not data.get('password'):
+                return jsonify({'status':10001,'statusInfo':'Empty Form','data':{}})
+            return jsonify({'status':0,'statusInfo':'Success','data':{}})
         else:
-            user_col.insert_one({'account':account,'mail':mail,'password':generate_password_hash(password)})
-            #flash('注册成功，正在跳转到登陆界面...')
-            return redirect(url_for('auth.login'))
-    return render_template('register.html',form=form)
+            return jsonify({'status':20001,'statusInfo':'Content-Type Error','data':{}})
+
+    return render_template('register.html')
 
 @bp.route('/login',methods=['GET','POST'])
 def login():
-    form=LoginForm()
-    if form.validate_on_submit():
-        mail=form.mail.data
-        password=form.password.data
-        a_doc=user_col.find_one({'mail':mail})
+    if request.method=='POST':
+        if request.is_json:
+            data = request.json
+            if not data.get('email') or not data.get('password'):
+                return jsonify({'status':10001,'statusInfo':'Empty Form','data':{}})
+            return jsonify({'status':0,'statusInfo':'Success','data':{}})
+        else:
+            return jsonify({'status':20001,'statusInfo':'Content-Type Error','data':{}})
+
+
+        '''
         if not a_doc:
             flash('用户不存在')
         elif not check_password_hash(a_doc['password'],password):
@@ -42,9 +39,33 @@ def login():
             session.clear()
             session['user_mail']=a_doc['mail']
             return redirect(url_for('grouping.home'))
-    return render_template('login.html',form=form)
+        '''
 
+    return render_template('load.html')
 
+@bp.route('/change_password',methods=['GET','POST'])
+def change_password():
+    if request.method=='POST':
+        if request.is_json:
+            data=request.json
+            if not data.get('oldPassword') or not data.get('newPassword'):
+                return jsonify({'status':10001,'statusInfo':'Empty Form','data':{}})
+            return jsonify({'status':0,'statusInfo':'Success','data':{}})
+        else:
+            return jsonify({'status':20001,'statusInfo':'Content-Type Error','data':{}})
+    return render_template('load.html')
+
+@bp.route('/unsubscribe',methods=['GET','POST'])
+def unsubscribe():
+    if request.method=='POST':
+        if request.is_json:
+            data=request.json
+            if not data.get('password'):
+                return jsonify({'status':10001,'statusInfo':'Empty Form','data':{}})
+            return jsonify({'status':0,'statusInfo':'Success','data':{}})
+        else:
+            return jsonify({'status':20001,'statusInfo':'Content-Type Error','data':{}})
+    return render_template('load.html')
 
 @bp.before_app_request
 def load_logged_in_user():
@@ -59,7 +80,7 @@ def login_required(view):
     @functools.wraps(view)
     def wrapped_view(**kwargs):
         if g.user is None:
-            return redirect(url_for('auth.login_remider'))
+            return redirect(url_for('auth.login'))
 
         return view(**kwargs)
 
