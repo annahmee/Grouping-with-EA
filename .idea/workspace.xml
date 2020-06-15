@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65c5ee86-a799-4263-acc8-fa2c82f4cde8" name="Default Changelist" comment="" />
+    <list default="true" id="65c5ee86-a799-4263-acc8-fa2c82f4cde8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grouping/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/grouping/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grouping/dao/Item.py" beforeDir="false" afterPath="$PROJECT_DIR$/grouping/dao/Item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grouping/dao/SqlTool.py" beforeDir="false" afterPath="$PROJECT_DIR$/grouping/dao/SqlTool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grouping/dao/UserManage.py" beforeDir="false" afterPath="$PROJECT_DIR$/grouping/dao/UserManage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grouping/file_manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/grouping/file_manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grouping/pro_manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/grouping/pro_manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grouping/res_manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/grouping/res_manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grouping/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/grouping/resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grouping/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/grouping/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grouping/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/grouping/templates/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -15,7 +36,7 @@
   <component name="ProjectId" id="1cfbJKvuO4ond1yGHDnMcOoKkXC" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="D:/PycharmProjects/test" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -30,7 +51,73 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (grouping/__init__.py)">
+  <component name="RunManager" selected="Python.test">
+    <configuration name="DE" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Grouping-with-EA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/grouping/algorithm/DE" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grouping/algorithm/DE/DE.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GA_MU (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Grouping-with-EA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/grouping/algorithm/GA-MU" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grouping/algorithm/GA-MU/GA_MU.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ProjectManage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Grouping-with-EA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/grouping/dao" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grouping/dao/ProjectManage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="UserManage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Grouping-with-EA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -45,6 +132,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grouping/dao/UserManage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Grouping-with-EA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/grouping" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grouping/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,11 +195,19 @@
     </configuration>
     <list>
       <item itemvalue="Flask server.Flask (grouping/__init__.py)" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.DE" />
+      <item itemvalue="Python.GA_MU (1)" />
       <item itemvalue="Python.UserManage" />
+      <item itemvalue="Python.ProjectManage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.ProjectManage" />
         <item itemvalue="Python.UserManage" />
+        <item itemvalue="Python.DE" />
+        <item itemvalue="Python.GA_MU (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -104,7 +221,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590922521840</updated>
-      <workItem from="1590922523133" duration="26394000" />
+      <workItem from="1590922523133" duration="43787000" />
+      <workItem from="1591060649033" duration="17482000" />
+      <workItem from="1591195512947" duration="683000" />
+      <workItem from="1591704334565" duration="36000" />
+      <workItem from="1592067889962" duration="62038000" />
     </task>
     <servers />
   </component>
@@ -116,14 +237,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Grouping_with_EA$UserManage.coverage" NAME="UserManage Coverage Results" MODIFIED="1590933190291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grouping/dao" />
-    <SUITE FILE_PATH="coverage/Grouping_with_EA$Flask__grouping___init___py_.coverage" NAME="Flask (grouping/__init__.py) Coverage Results" MODIFIED="1590991066282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Grouping_with_EA$DE.coverage" NAME="DE Coverage Results" MODIFIED="1591060868740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grouping/algorithm/DE" />
+    <SUITE FILE_PATH="coverage/Grouping_with_EA$GA_MU__1_.coverage" NAME="GA_MU (1) Coverage Results" MODIFIED="1591017755834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grouping/algorithm/GA-MU" />
+    <SUITE FILE_PATH="coverage/Grouping_with_EA$GA_NMU.coverage" NAME="GA_NMU Coverage Results" MODIFIED="1591007271342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grouping/algorithm/GA-NMU" />
+    <SUITE FILE_PATH="coverage/Grouping_with_EA$BOOST.coverage" NAME="BOOST Coverage Results" MODIFIED="1591014533077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grouping/algorithm/BOOST" />
+    <SUITE FILE_PATH="coverage/Grouping_with_EA$UserManage.coverage" NAME="UserManage Coverage Results" MODIFIED="1592117318037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grouping/dao" />
+    <SUITE FILE_PATH="coverage/Grouping_with_EA$ProjectManage.coverage" NAME="ProjectManage Coverage Results" MODIFIED="1592121443788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grouping/dao" />
+    <SUITE FILE_PATH="coverage/Grouping_with_EA$GA_MU.coverage" NAME="GA_MU Coverage Results" MODIFIED="1590995964618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grouping/GA/GA-MU" />
+    <SUITE FILE_PATH="coverage/Grouping_with_EA$test.coverage" NAME="test Coverage Results" MODIFIED="1592157316966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/grouping" />
+    <SUITE FILE_PATH="coverage/Grouping_with_EA$Flask__grouping___init___py_.coverage" NAME="Flask (grouping/__init__.py) Coverage Results" MODIFIED="1592147276912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

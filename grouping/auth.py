@@ -47,7 +47,7 @@ def login():
                 return jsonify({'status': 10002, 'statusInfo': 'Email or Password Error', 'data': {}})
             else:
                 session.clear()
-                session['uid'] = res[0][0]
+                session['uid'] = str(res[0][0])
                 return jsonify({'status':0,'statusInfo':'Success','data':{}})
         else:
             return jsonify({'status':20001,'statusInfo':'Content-Type Error','data':{}})

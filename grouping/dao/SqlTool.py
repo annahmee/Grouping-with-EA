@@ -45,12 +45,17 @@ class MysqlManager(object):
         添加数据到数据库
         str -> table 为字符串
         [{},{}] -> 为列表中嵌套字典类型
+
+        成功返回1
+        失败返回0
         '''
         # 用户传入数据字典列表数据，根据key, value添加进数据库
         # 连接数据库
-        self._connect_db()
 
+
+        flag = 1
         try:
+            self._connect_db()
             for data in insert_data:
                 # 提取插入的字段
                 key = ','.join(data.keys())
@@ -60,12 +65,14 @@ class MysqlManager(object):
                 # 构建sql语句
                 sql = "insert into {table}({key}) values ({val})".format(table=table, key=key, val=insert_data)
                 print(sql)
-                self.__cursor.execute(sql)
+                flag = self.__cursor.execute(sql)
                 self.__connect.commit()
-        except Exception as error:
-            print(error)
+        except Exception as e:
+            flag = 0
+            print(e)
         finally:
             self._close_db()
+            return flag
 
     def delete(self, table, condition):
         '''
@@ -73,20 +80,31 @@ class MysqlManager(object):
         删除数据库中的数据
         str -> table 字符串类型
         dict -> condition 字典类型
+
+        返回删除条数
+
         '''
-        self._connect_db()
 
-        # 处理删除的条件
-        condition_list = self._deal_values(condition)
-        condition_data = ' and '.join(condition_list)
-        # 构建sql语句
-        sql = "delete from {table} where {condition}".format(table=table, condition=condition_data)
-        print(sql)
+        flag = 1
+        try:
+            self._connect_db()
 
-        self.__cursor.execute(sql)
-        self.__connect.commit()
-        self._close_db()
+            # 处理删除的条件
+            condition_list = self._deal_values(condition)
+            condition_data = ' and '.join(condition_list)
+            # 构建sql语句
+            sql = "delete from {table} where {condition}".format(table=table, condition=condition_data)
+            print(sql)
 
+            flag = temp = self.__cursor.execute(sql)
+
+            self.__connect.commit()
+        except Exception as e:
+            print(e)
+            flag = 0
+        finally:
+            self._close_db()
+            return flag
     def update(self, table, data, condition=None):
         """
             dbManager.update(table, data, [condition])
@@ -94,26 +112,35 @@ class MysqlManager(object):
         str -> table 字符串类型
         dict -> data 字典类型
         dict -> condition 字典类型
+
+        返回更新条数
         """
-        self._connect_db()
+        flag = 1
+        try:
+            self._connect_db()
 
-        # 处理传入的数据
-        update_list = self._deal_values(data)
-        update_data = ",".join(update_list)
-        # 判断是否有条件
-        if condition is not None:
-            # 处理传入的条件
-            condition_list = self._deal_values(condition)
-            condition_data = ' and '.join(condition_list)
-            sql = "update {table} set {values} where {condition}".format(table=table, values=update_data,
-                                                                         condition=condition_data)
-        else:
-            sql = "update {table} set {values}".format(table=table, values=update_data)
-        print(sql)
+            # 处理传入的数据
+            update_list = self._deal_values(data)
+            update_data = ",".join(update_list)
+            # 判断是否有条件
+            if condition is not None:
+                # 处理传入的条件
+                condition_list = self._deal_values(condition)
+                condition_data = ' and '.join(condition_list)
+                sql = "update {table} set {values} where {condition}".format(table=table, values=update_data,
+                                                                             condition=condition_data)
+            else:
+                sql = "update {table} set {values}".format(table=table, values=update_data)
+            print(sql)
 
-        self.__cursor.execute(sql)
-        self.__connect.commit()
-        self._close_db()
+            flag = self.__cursor.execute(sql)
+            self.__connect.commit()
+        except Exception as e:
+            print(e)
+            flag = 0
+        finally:
+            self._close_db()
+            return flag
 
     def get(self, table, show_list, condition=None, get_one=False):
         """

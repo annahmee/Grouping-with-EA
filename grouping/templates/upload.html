@@ -1,6 +1,8 @@
-<form id="form1" method="post" action="http://127.0.0.1:8080/resource/upload" enctype="multipart/form-data">
-    <div>
-        <input id="File1" type="file" name="input_file"/>
-        <input type="submit">提交</input>
-    </div>
-</form>
+<!doctype html>
+    <title>Upload new File</title>
+    <h1>Upload new File</h1>
+    <form method=post action="http://192.168.150.134/resource/upload" enctype=multipart/form-data>
+      <input type=file name=input_file>
+        <input type=text name=fileName>
+      <input type=submit value=Upload>
+    </form>

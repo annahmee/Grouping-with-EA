@@ -24,8 +24,8 @@ class UserManage():
             else:
                 list = []
                 list.append(user.toDic())
-                self.sqlManage.insert("user", list)
-                return 1
+                return self.sqlManage.insert("user", list)
+
         except Exception as e:
             return 0
 
@@ -45,7 +45,7 @@ class UserManage():
 
     def findUserByUid(self,uid):
         '''
-        根据用户名来查找uid
+        根据uid来查找用户
         :param uid
         :return: User
         '''
@@ -68,7 +68,7 @@ class UserManage():
                 1：成功
         '''
         try:
-            self.sqlManage.update("user",user.toDic(),condition={'uid':user.getUid()})
+            return self.sqlManage.update("user",user.toDic(),condition={'uid':user.getUid()})
         except Exception as e:
             return 0
         return 1
@@ -80,19 +80,18 @@ class UserManage():
         :return:
         '''
         try:
-            temp = self.sqlManage.delete("user",{'uid':uid})
+            return self.sqlManage.delete("user",{'uid':uid})
         except Exception as e:
             return 0
         return 1
 
 if __name__ == '__main__':
     um = UserManage("rdpg","root",'123456')
-    user = User("123","czh6","12345","123@qq.com")
+    # print(um.findUidByUser(User(username="czh5")))
+    user = User('123',"czh6","12345","123@qq.com")
+
+    # um.findUserByUid(2).print()
+    # user = User(4,"cccccc","1111",'dsaf')
+    # print(um.updateUserByUserInfo(user))
     print(um.register(user))
-    print(um.findUserByUid("123").toDic())
-    if um.findUserByUserInfo(User(email="123@qq.com")):
-        print(um.findUserByUserInfo(User(email="123@qq.com"))[0])
-    #um.findUserByUid(2).print()
-    #user = User(4,"cccccc","1111",'dsaf')
-    #print(um.updateUserByUserInfo(user))
-    #print(um.deleteUserByUid(4))
+
